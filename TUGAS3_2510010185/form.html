@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran UKM - Tugas 3</title>
+</head>
+<body>
+
+    <!-- Header dengan Navigasi Semantik -->
+    <header>
+        <h1>Formulir Pendaftaran UKM Kampus</h1>
+        <nav>
+            <a href="data.html">Data Mahasiswa</a> | 
+            <a href="form.html">Formulir Pendaftaran UKM</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2>Formulir Pendaftaran Anggota Baru</h2>
+            
+            <!-- Form dengan atribut action -->
+            <form action="#" method="POST">
+                
+                <!-- 1. Text Field -->
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" minlength="3" placeholder="Masukkan nama lengkap" required>
+                </p>
+
+                <!-- 2. Email Field -->
+                <p>
+                    <label for="email">Email Aktif:</label><br>
+                    <input type="email" id="email" name="email" placeholder="contoh@domain.com" required>
+                </p>
+
+                <!-- 3. Password Field -->
+                <p>
+                    <label for="password">Kata Sandi:</label><br>
+                    <input type="password" id="password" name="password" minlength="6" placeholder="Minimal 6 karakter" required>
+                </p>
+
+                <!-- 4. Number Field (dengan min & max) -->
+                <p>
+                    <label for="usia">Usia:</label><br>
+                    <input type="number" id="usia" name="usia" min="17" max="30" value="18" required>
+                </p>
+
+                <!-- 5. Date Field -->
+                <p>
+                    <label for="tgl_lahir">Tanggal Lahir:</label><br>
+                    <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+                </p>
+
+                <!-- 6. Radio Button dalam Fieldset & Legend -->
+                <fieldset>
+                    <legend>Jenis Kelamin:</legend>
+                    <p>
+                        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+                        <label for="laki">Laki-laki</label><br>
+                        
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </p>
+                </fieldset>
+                <br>
+
+                <!-- 7. Select Dropdown (minimal 4 option) -->
+                <p>
+                    <label for="ukm">Pilihan UKM:</label><br>
+                    <select id="ukm" name="ukm" required>
+                        <option value="">-- Pilih UKM Tujuan --</option>
+                        <option value="coding">UKM Programming / Coding</option>
+                        <option value="futsal">UKM Olahraga (Futsal)</option>
+                        <option value="paduan_suara">UKM Seni &amp; Paduan Suara</option>
+                        <option value="jurnalistik">UKM Pers Mahasiswa / Jurnalistik</option>
+                    </select>
+                </p>
+
+                <!-- 8. Checkbox (minimal 3 pilihan minat) -->
+                <fieldset>
+                    <legend>Minat &amp; Keahlian (Pilih minimal 1):</legend>
+                    <p>
+                        <input type="checkbox" id="minat1" name="minat" value="web">
+                        <label for="minat1">Web Development</label><br>
+                        
+                        <input type="checkbox" id="minat2" name="minat" value="design">
+                        <label for="minat2">UI/UX Design</label><br>
+                        
+                        <input type="checkbox" id="minat3" name="minat" value="network">
+                        <label for="minat3">Computer Networking</label>
+                    </p>
+                </fieldset>
+                <br>
+
+                <!-- 9. Textarea untuk Alasan -->
+                <p>
+                    <label for="alasan">Alasan Bergabung:</label><br>
+                    <textarea id="alasan" name="alasan" rows="4" cols="40" placeholder="Tuliskan alasan Anda..." required></textarea>
+                </p>
+
+                <!-- 10. Tombol Submit & Reset -->
+                <p>
+                    <button type="submit">Kirim Pendaftaran</button>
+                    <button type="reset">Reset Formulir</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Mini-situs Formulir &amp; Data. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
