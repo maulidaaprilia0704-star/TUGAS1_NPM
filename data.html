@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa - Tugas 3</title>
+</head>
+<body>
+
+    <!-- Header dengan Navigasi Semantik -->
+    <header>
+        <h1>Sistem Informasi Data Mahasiswa &amp; UKM</h1>
+        <nav>
+            <a href="data.html">Data Mahasiswa</a> | 
+            <a href="form.html">Formulir Pendaftaran UKM</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2>Data Mahasiswa Satu Angkatan</h2>
+            
+            <!-- Tabel Data Mahasiswa -->
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Tabel 1: Data Anggota Mahasiswa Angkatan 2024</caption>
+                
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>NPM</th>
+                        <th>Nama</th>
+                        <th>Prodi</th>
+                        <th>Semester</th>
+                        <th>Status</th>
+                        <th>Angkatan</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2510010185</td>
+                        <td>Nur Maulida</td>
+                        <td>Teknik Informatika</td>
+                        <td>3</td>
+                        <td>Aktif</td>
+                        <!-- Rowspan menggabungkan kategori angkatan -->
+                        <td rowspan="8">2024</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2510010186</td>
+                        <td>Budi Santoso</td>
+                        <td>Teknik Informatika</td>
+                        <td>3</td>
+                        <td>Aktif</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2510010187</td>
+                        <td>Siti Aminah</td>
+                        <td>Sistem Informasi</td>
+                        <td>3</td>
+                        <td>Aktif</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2510010188</td>
+                        <td>Ahmad Fauzi</td>
+                        <td>Teknik Informatika</td>
+                        <td>3</td>
+                        <td>Cuti</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2510010189</td>
+                        <td>Dewi Lestari</td>
+                        <td>Sistem Informasi</td>
+                        <td>3</td>
+                        <td>Aktif</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>2510010190</td>
+                        <td>Eko Prasetyo</td>
+                        <td>Teknik Informatika</td>
+                        <td>3</td>
+                        <td>Aktif</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>2510010191</td>
+                        <td>Fitriani</td>
+                        <td>Sistem Informasi</td>
+                        <td>3</td>
+                        <td>Aktif</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>2510010192</td>
+                        <td>Gita Gutawa</td>
+                        <td>Teknik Informatika</td>
+                        <td>3</td>
+                        <td>Aktif</td>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                        <!-- Colspan untuk menggabungkan kolom di footer -->
+                        <td colspan="5"><strong>Total Mahasiswa Terdata</strong></td>
+                        <td colspan="2"><strong>8 Mahasiswa</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Mini-situs Formulir &amp; Data. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
