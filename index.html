@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Saya</title>
+    <title>Blog Saya - Pemrograman Web</title>
+    <!-- Link Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Link CSS External -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Nur Maulida Aprilia</h1>
-    <h2>NPM: 2510010185| Kelas: TI-3A Nonreg BJB</h2>
-    <h3>Tentang Saya</h3>
-    <p>Hai Nama saya <strong>Nur Maulida Aprilia</strong>
-        saya adalah mahasiswa fakultas teknologi informasi prodi teknik informatika</p>
-    <h3>Teknik Informatika Universitas Islam Kalimantan</h3>
-    <p>saya ingin mengambil prodi teknik informatika di universitas islam kalimantan. saya ingin memahami pemrograman,
-        pengembangan website dan teknologi komputer</p>
-    <h3>Hobi dan Cita-cita</h3>
-    <p>Hobi saya adalah menyanyi dan mendengarkan musik, dan cita cita saya adalah menjadi seorang profesional di bidang
-        teknologi informasi dan menikah dengan halo dek</p>
 
-    <hr>
-    <p><em>Terus Belajar dan Jangan Menyerah dalam meraih cita cita, Never Try Never Know</em></p>
+    <!-- Header dengan Navigasi -->
+    <header id="main-header">
+        <h1>Catatan Teknologiku</h1>
+        <nav>
+            <a href="#artikel" class="nav-link">Artikel Utama</a> | 
+            <a href="https://developer.mozilla.org" target="_blank" class="nav-link">Dokumentasi MDN</a> | 
+            <a href="https://github.com" target="_blank" class="nav-link">GitHub Profil</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama (Article) -->
+    <main>
+        <article id="artikel">
+            <header class="article-header">
+                <h2>Pentingnya Mempelajari Pemrograman Web Modern</h2>
+                <p class="meta-info">Dipublikasikan pada <time datetime="2026-10-18">18 Oktober 2026</time> oleh <strong>Nur Maulida</strong></p>
+            </header>
+
+            <p class="highlight">
+                Pemrograman web telah menjadi salah satu keahlian paling dicari di era digital saat ini. Dengan memahami fondasi seperti HTML, CSS, dan JavaScript, kita dapat membangun platform interaktif yang menghubungkan jutaan orang di seluruh dunia.
+            </p>
+
+            <p>
+                Langkah pertama dalam perjalanan ini adalah menguasai struktur HTML. HTML5 memberikan berbagai elemen semantik baru yang membuat struktur halaman menjadi jauh lebih bermakna dan mudah diakses oleh mesin pencari maupun pembaca layar.
+            </p>
+
+            <blockquote>
+                "Kerapian struktur HTML dan konsistensi styling CSS adalah kunci utama membangun situs web profesional yang mudah dipelihara."
+            </blockquote>
+
+            <p>
+                Setelah struktur HTML terbentuk dengan baik, tahap berikutnya adalah memberikan tampilan yang menarik menggunakan CSS. Dengan CSS, kita bisa mengatur warna, tata letak, hingga tipografi secara terpisah dari konten utama.
+            </p>
+
+            <h3>Manfaat Menggunakan External CSS:</h3>
+            <ul class="fitur-list">
+                <li>Memisahkan antara struktur konten dan desain tampilan secara bersih.</li>
+                <li>Memudahkan pemeliharaan kode saat proyek berkembang menjadi lebih besar.</li>
+                <li>Memungkinkan penghematan waktu karena satu file CSS bisa dipakai di banyak halaman.</li>
+            </ul>
+
+            <p>
+                Konsistensi desain juga ditunjang oleh pemilihan skema warna dan font yang tepat. Menggunakan font seperti <span class="badge">Poppins</span> dapat meningkatkan keterbacaan artikel serta memberikan kesan modern pada situs web Anda.
+            </p>
+
+            <p class="penutup">
+                Kesimpulannya, teruslah berlatih membangun berbagai proyek kecil. Konsistensi dalam menulis kode setiap hari akan membentuk intuisi pemrograman yang kuat dari waktu ke waktu.
+            </p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Blog Saya &bull; Dibuat untuk Tugas Pemrograman Web</p>
+    </footer>
+
 </body>
-
 </html>
